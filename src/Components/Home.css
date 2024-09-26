@@ -1,0 +1,50 @@
+
+.bg{
+
+    /* position: relative; */
+    height: 770px;
+    background-image: url("G:/React/New folder/event/public/image/BG.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Darkens the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.Logo {
+    width: 100%; /* Full width by default */
+    max-width: 300px; /* Maximum size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    background-color: rgba(123, 123, 123, 0.3);
+    border-radius: 100%;
+    animation: float 3s ease-in-out infinite;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .Logo {
+        max-width: 400px;
+    }
+}
+
+/* Media query for extra-large screens */
+@media (min-width: 1024px) {
+    .Logo {
+        max-width: 500px;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up by 15px */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}

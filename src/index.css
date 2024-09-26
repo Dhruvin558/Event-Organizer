@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Make vertical scrollbar transparent in WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Keep it thin but visible when scrolling */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Transparent thumb by default */
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition when hovered */
+}
+
+/* Show a subtle thumb when the scrollbar is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 197, 197, 0.5); /* Semi-transparent thumb on hover */
+}
+
+/* Firefox styling */
+html {
+  scrollbar-width:thin; /* Thin scrollbar */
+  scrollbar-color: transparent transparent; /* Transparent scrollbar for Firefox */
+}
+
+/* Show subtle scrollbar on hover for Firefox */
+html:hover {
+  scrollbar-color: rgba(255, 197, 197, 0.5) transparent; /* Semi-transparent on hover */
 }
