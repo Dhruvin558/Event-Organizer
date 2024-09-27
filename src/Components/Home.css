@@ -3,7 +3,7 @@
 
     /* position: relative; */
     height: 770px;
-    background-image: url("G:/React/New folder/event/public/image/BGimage.png");
+    background-image: url("/public/image/BGimage.png");
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5); /* Darkens the background */
