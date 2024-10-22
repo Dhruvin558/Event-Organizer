@@ -8,6 +8,7 @@ const Navbar1 = () => {
   return (
     <div className="navbar">
       {/* Logo on the left */}
+      
       <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
       <img src="\image\logo.png" className="logo" alt="Logo" />
 </Link>
